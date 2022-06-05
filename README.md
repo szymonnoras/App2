@@ -24,6 +24,7 @@ http://localhost:8080/cards/getall - listing all cards the app has read from fil
 - Names:
 
 http://localhost:8080/cards/get/name/equals/value - listing all cards which have equal "name" value. Value to filter is provided by replacing word "value" at the end of URL
+
 http://localhost:8080/cards/get/name/contains/value - listing all cards which contains "name" value. Value to filter is provided by replacing word "value" at the end of URL
 
 - Surames:
