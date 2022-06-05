@@ -6,6 +6,7 @@ Author: Szymon Noras
 To run the application you need to:
 - clone the repository to local directory
 - open project in IDE (for example IntelliJ IDEA)
+- go to src/main/java/com.example.app2
 - open App2Application.java file
 - run App2Application.java file
 
