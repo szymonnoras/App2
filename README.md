@@ -35,5 +35,6 @@ http://localhost:8080/cards/surname/contains/{value} - listing all cards which c
 
 - Phones:
 
-http://localhost:8080/cards/phone/equals/{value} - listing all cards which have equal "phone" value. Value is provided as a parameter in {}\n
+http://localhost:8080/cards/phone/equals/{value} - listing all cards which have equal "phone" value. Value is provided as a parameter in {}
+
 http://localhost:8080/cards/phone/contains/{value} - listing all cards which contains "phone" value. Value is provided as a parameter in {}
