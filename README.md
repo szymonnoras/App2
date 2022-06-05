@@ -23,18 +23,17 @@ http://localhost:8080/cards/getall - listing all cards the app has read from fil
 
 - Names:
 
-http://localhost:8080/cards/name/equals/{value} - listing all cards which have equal "name" value. Value to filter is provided as a parameter in {}
-
-http://localhost:8080/cards/name/contains/{value} - listing all cards which contains "name" value. Value to filter is provided as a parameter in {}
+http://localhost:8080/cards/get/name/equals/value - listing all cards which have equal "name" value. Value to filter is provided by replacing word "value" at the end of URL
+http://localhost:8080/cards/get/name/contains/value - listing all cards which contains "name" value. Value to filter is provided by replacing word "value" at the end of URL
 
 - Surames:
 
-http://localhost:8080/cards/surname/equals/{value} - listing all cards which have equal "surname" value. Value to filter is provided as a parameter in {}
+http://localhost:8080/cards/get/surname/equals/{value} - listing all cards which have equal "surname" value. Value to filter is provided by replacing word "value" at the end of URL
 
-http://localhost:8080/cards/surname/contains/{value} - listing all cards which contains "surname" value. Value to filter is provided as a parameter in {}
+http://localhost:8080/cards/get/surname/contains/{value} - listing all cards which contains "surname" value. Value to filter is provided by replacing word "value" at the end of URL
 
 - Phones:
 
-http://localhost:8080/cards/phone/equals/{value} - listing all cards which have equal "phone" value. Value to filter is provided as a parameter in {}
+http://localhost:8080/cards/get/phone/equals/{value} - listing all cards which have equal "phone" value. Value to filter is provided by replacing word "value" at the end of URL
 
-http://localhost:8080/cards/phone/contains/{value} - listing all cards which contains "phone" value. Value to filter is provided as a parameter in {}
+http://localhost:8080/cards/get/phone/contains/{value} - listing all cards which contains "phone" value. Value to filter is provided by replacing word "value" at the end of URL
