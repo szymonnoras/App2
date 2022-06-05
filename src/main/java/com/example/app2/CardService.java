@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 @Service
 public class CardService {
@@ -56,7 +57,7 @@ public class CardService {
         return dataToValidate;
     }
 
-    /**
+    /**A
      * Parses valid List of arrays of strings to List of Cards
      *
      * @param path path of file to get data from
@@ -77,37 +78,37 @@ public class CardService {
 
     public List<Card> getCardsByNameEqual(String name) {
         List<Card> cards=getAllCards();
-        cards.removeIf(c -> !c.getName().equals(name));
+        cards.removeIf(c -> !c.getName().equalsIgnoreCase(name));
         return cards;
     }
 
     public List<Card> getCardsByNameContaining(String name) {
         List<Card> cards=getAllCards();
-        cards.removeIf(c -> !c.getName().contains(name));
+        cards.removeIf(c -> !c.getName().toLowerCase(Locale.ROOT).contains(name));
         return cards;
     }
 
     public List<Card> getCardsBySurnameEqual(String surname) {
         List<Card> cards=getAllCards();
-        cards.removeIf(c -> !c.getSurname().equals(surname));
+        cards.removeIf(c -> !c.getSurname().equalsIgnoreCase(surname));
         return cards;
     }
 
     public List<Card> getCardsBySurnameContaining(String surname) {
         List<Card> cards=getAllCards();
-        cards.removeIf(c -> !c.getSurname().contains(surname));
+        cards.removeIf(c -> !c.getSurname().toLowerCase(Locale.ROOT).contains(surname));
         return cards;
     }
 
     public List<Card> getCardsByPhoneEqual(String phone) {
         List<Card> cards=getAllCards();
-        cards.removeIf(c -> !c.getPhone().equals(phone));
+        cards.removeIf(c -> !c.getPhone().equalsIgnoreCase(phone));
         return cards;
     }
 
     public List<Card> getCardsByPhoneContaining(String phone) {
         List<Card> cards=getAllCards();
-        cards.removeIf(c -> !c.getPhone().contains(phone));
+        cards.removeIf(c -> !c.getPhone().toLowerCase(Locale.ROOT).contains(phone));
         return cards;
     }
 }
