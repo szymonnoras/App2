@@ -13,8 +13,6 @@ This will read data from file from resources package, if you want to change the 
 - open CardService.java
 - change variable "path" to desired location
 
-The origin URL of application is:
-http://localhost:8080/
 
 Application provides following mappings:
 - All cards:
